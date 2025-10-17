@@ -1,12 +1,9 @@
-const cloudinary = require("cloudinary").v2;
-
-// Configure Cloudinary
+const cloudinary = require('cloudinary').v2;
 cloudinary.config({
-  cloud_name: "dbxa8mg0e",
-  api_key: "116351359578889",
-  api_secret: "VEY2tHty2o_g8h4wURjfnbQahPY",
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
-
 
 const filePath = "D:/Credmint Tech/blog-app/Assets/blog_pic_16.png"; // <- your image path
 
